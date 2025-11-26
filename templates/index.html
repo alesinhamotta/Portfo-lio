@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+{% block title %}Início{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="container">
+        <div class="row align-items-center min-vh-100">
+            <div class="col-lg-6 text-white hero-content">
+                <h1 class="display-3 fw-bold mb-3 animate-fade-in">
+                    Olá, eu sou a <span class="text-gradient">Alessandra Motta</span>
+                </h1>
+                <h2 class="h3 mb-4 animate-fade-in-delay">
+                    <span class="typing-text">AI & Machine Learning Developer</span>
+                </h2>
+                <p class="lead mb-4 animate-fade-in-delay-2">
+                    🚀 Entusiasta de Inteligência Artificial e Machine Learning, apaixonada por transformar ideias em soluções de impacto.
+                </p>
+                <div class="d-flex gap-3 mb-4 animate-fade-in-delay-3">
+                    <a href="{{ url_for('sobre') }}" class="btn btn-primary btn-lg">
+                        <i class="fas fa-user me-2"></i>Sobre Mim
+                    </a>
+                    <a href="{{ url_for('contato') }}" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-envelope me-2"></i>Contato
+                    </a>
+                </div>
+                <div class="social-links animate-fade-in-delay-4"></div>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block">
+                <div class="hero-image-container animate-float">
+                    <div class="glow-effect"></div>
+                    <div class="profile-circle">
+                        <i class="fas fa-code code-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-indicator">
+        <i class="fas fa-chevron-down"></i>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section class="skills-section py-5">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">
+            <span class="text-gradient">Minhas Habilidades</span>
+        </h2>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-python"></i></div>
+                    <h3 class="h5 mt-3">Python</h3>
+                    <p class="text-muted">Desenvolvimento e análise de dados</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                    <h3 class="h5 mt-3">Machine Learning</h3>
+                    <p class="text-muted">Modelos de IA e aprendizado</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-robot"></i></div>
+                    <h3 class="h5 mt-3">Prompt Engineering</h3>
+                    <p class="text-muted">Otimização de prompts para IA</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3 class="h5 mt-3">Web Development</h3>
+                    <p class="text-muted">HTML, CSS, JavaScript</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section class="projects-section py-5">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">
+            <span class="text-gradient">Projetos em Destaque</span>
+        </h2>
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-gavel project-icon"></i>
+                        <h3 class="h4">App de Visual Law com IA</h3>
+                    </div>
+                    <p class="project-description">
+                        Aplicação web inovadora para advogados e profissionais do direito, focada em otimizar a criação de documentos jurídicos com Visual Law.
+                    </p>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <h5><i class="fas fa-exclamation-circle me-2"></i>O Problema</h5>
+                            <p>Profissionais do direito perdem tempo valioso na formatação de documentos complexos e carecem de ferramentas intuitivas.</p>
+                        </div>
+                        <div class="detail-item">
+                            <h5><i class="fas fa-lightbulb me-2"></i>A Solução</h5>
+                            <p>Um aplicativo web que utiliza API de IA para gerar petições e documentos a partir de dados inseridos pelo usuário, com templates visuais e exportação para PDF/Word.</p>
+                        </div>
+                        <div class="detail-item">
+                            <h5><i class="fas fa-tools me-2"></i>Tecnologias</h5>
+                            <p>Python (Backend), API de IA, Flask/Django, Frontend moderno</p>
+                        </div
+                        {% endblock %}

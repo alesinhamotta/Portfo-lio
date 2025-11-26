@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+{% block title %}Sobre{% endblock %}
+
+{% block content %}
+
+<!-- About Header -->
+<section class="about-header">
+    <div class="container">
+        <div class="row align-items-center min-vh-100">
+            <div class="col-lg-12 text-center text-white">
+                <h1 class="display-4 fw-bold mb-3 animate-fade-in">
+                    Sobre <span class="text-gradient">Mim</span>
+                </h1>
+                <p class="lead animate-fade-in-delay">Conheça mais sobre minha jornada na tecnologia</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Content -->
+<section class="about-content py-5">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-lg-8 mx-auto">
+                <div class="about-card">
+                    <div class="about-icon-wrapper mb-4">
+                        <i class="fas fa-user-astronaut about-main-icon"></i>
+                    </div>
+                    <h2 class="h3 mb-4 text-center">
+                        <span class="text-gradient">Quem sou eu?</span>
+                    </h2>
+                    <p class="lead text-center mb-4">
+                        Sou uma desenvolvedora com foco em <strong>Inteligência Artificial</strong>, atualmente cursando <strong>IA e Machine Learning</strong> e aprofundando meus conhecimentos em <strong>Python</strong> e <strong>Prompt Engineering</strong>.
+                    </p>
+                    <p class="text-center">
+                        Minha paixão é aplicar a tecnologia para resolver problemas reais, criando ferramentas que sejam não apenas funcionais, mas também intuitivas e acessíveis. Acredito que a combinação de código, dados e criatividade tem o poder de gerar um impacto positivo e duradouro.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Valores -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="section-title text-center mb-5"><span class="text-gradient">Meus Valores</span></h2>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h3 class="h5 mt-3">Inovação</h3>
+                    <p class="text-muted">Busco constantemente novas formas de resolver problemas complexos com soluções criativas e tecnológicas.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-heart"></i></div>
+                    <h3 class="h5 mt-3">Impacto</h3>
+                    <p class="text-muted">Desenvolvo projetos que fazem a diferença na vida das pessoas e contribuem para um futuro melhor.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3 class="h5 mt-3">Aprendizado</h3>
+                    <p class="text-muted">Estou sempre explorando novos caminhos na tecnologia e aprimorando minhas habilidades continuamente.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Competências Técnicas com barras -->
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="section-title text-center mb-5"><span class="text-gradient">Competências Técnicas</span></h2>
+                <div class="skills-progress">
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between mb-2"><span class="fw-semibold">Python</span><span class="text-muted">85%</span></div>
+                        <div class="progress" style="height: 10px;"><div class="progress-bar bg-gradient-primary" style="width: 85%"></div></div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between mb-2"><span class="fw-semibold">Machine Learning</span><span class="text-muted">75%</span></div>
+                        <div class="progress" style="height: 10px;"><div class="progress-bar bg-gradient-secondary" style="width: 75%"></div></div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between mb-2"><span class="fw-semibold">Prompt Engineering</span><span class="text-muted">90%</span></div>
+                        <div class="progress" style="height: 10px;"><div class="progress-bar bg-gradient-accent" style="width: 90%"></div></div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between mb-2"><span class="fw-semibold">Web Development</span><span class="text-muted">80%</span></div>
+                        <div class="progress" style="height: 10px;"><div class="progress-bar bg-gradient-warning" style="width: 80%"></div></div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between mb-2"><span class="fw-semibold">Flask/Django</span><span class="text-muted">70%</span></div>
+                        <div class="progress" style="height: 10px;"><div class="progress-bar bg-gradient-info" style="width: 70%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="row mt-5">
+            <div class="col-lg-8 mx-auto text-center">
+                <div class="cta-card">
+                    <h3 class="h4 mb-3">Vamos conversar sobre tecnologia e inovação?</h3>
+                    <p class="mb-4">Estou sempre aberta a novas oportunidades e colaborações!</p>
+                    <a href="{{ url_for('contato') }}" class="btn btn-primary btn-lg">
+                        <i class="fas fa-paper-plane me-2"></i>Entre em Contato
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

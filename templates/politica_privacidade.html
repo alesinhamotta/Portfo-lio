@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alessandra Motta - [Nome da Página]</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Seu CSS lindo -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <span class="brand-text">Alessandra Motta</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Policy Header -->
+    <section class="about-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12 text-center text-white">
+                    <h1 class="display-4 fw-bold mb-3 animate-fade-in">
+                        <span class="text-gradient">Política de Privacidade</span>
+                    </h1>
+                    <p class="lead animate-fade-in-delay">Conheça como protegemos seus dados</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Policy Content -->
+    <section class="policy-content py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="policy-card">
+                        <h2 class="h3 mb-4">
+                            <span class="text-gradient">1. Introdução</span>
+                        </h2>
+                        <p>
+                            Esta Política de Privacidade descreve como o portfólio de Alessandra Motta coleta, utiliza, armazena e protege as informações pessoais fornecidas pelos visitantes através do formulário de contato. Estamos comprometidos em proteger sua privacidade e garantir que você tenha uma experiência positiva em nosso site.
+                        </p>
+
+                        <h2 class="h3 mb-4 mt-5">
+                            <span class="text-gradient">2. Informações Coletadas</span>
+                        </h2>
+                        <p>
+                            Coletamos as seguintes informações pessoais quando você preenche o formulário de contato:
+                        </p>
+                        <ul>
+                            <li><strong>Nome Completo:</strong> Usado para identificação e resposta pessoal.</li>
+                            <li><strong>E-mail:</strong> Utilizado para entrar em contato com você em resposta à sua mensagem.</li>
+                            <li><strong>Assunto:</strong> Descreve o tema da sua mensagem.</li>
+                            <li><strong>Mensagem:</strong> O conteúdo da sua comunicação conosco.</li>
+                        </ul>
+
+                        <h2 class="h3 mb-4 mt-5">
+                            <span class="text-gradient">3. Como Usamos Suas Informações</span>
+                        </h2>
+                        <p>
+                            As informações coletadas são utilizadas exclusivamente para:
+                        </p>
+                        <ul>
+                            <li>Responder a suas mensagens e consultas.</li>
+                            <li>Estabelecer comunicação profissional sobre oportunidades de colaboração.</li>
+                            <li>Melhorar nossos serviços e conteúdo do portfólio.</li>
+                            <li>Manter um registro de comunicações para fins de acompanhamento.</li>
+                        </ul>
+
+                        <h2 class="h3 mb-4 mt-5">
+                            <span class="text-gradient">4. Armazenamento de Dados</span>
+                        </h2>
+                        <p>
+                            Seus dados são armazenados em um banco de dados local (SQLite) no servidor do portfólio. Implementamos medidas técnicas e organizacionais apropriadas para proteger suas informações contra acesso não autorizado, alteração, divulgação ou destruição.
+                        </p>
+
+                        <h2 class="h3 mb-4 mt-5">
+                            <span class="text-gradient">5. Segurança dos Dados</span>
+                        </h2>
+                        <p>
+                            Utilizamos as seguintes práticas de segurança:
+                        </p>
+                        <ul>
+                            <li>Criptografia de dados em trânsito (HTTPS, quando aplicável).</li>
+                            <li>Armazenamento seguro no banco de dados SQLite.</li>
+                            <li>Acesso restrito aos dados apenas por pessoas autorizadas.</li>
+                            <li>Revisão regular de práticas de segurança.</li>
+                        </ul>
+
+                        <h2 class="h3 mb-4 mt-5">
+                            <span class="text-gradient">6. Compartilhamento de Dados</span>
+                        </h2>
+                        <p>
+                            Não compartilhamos suas informações pessoais com terceiros, exceto quando:
+                        </p>
+                        <ul>
+                            <li>Exigido por lei ou ordem judicial.</li>
+                            <li>Necessário para proteger nossos direitos legais.</li>
+                            <li>Você consentir explicitamente.</li>
+                        </ul>
+
+                        <h2 class="h3 mb-4 mt-5">
+                            <span class="text-gradient">7. Retenção de Dados</span>
+                        </h2>
+                        <p>
+                            Mantemos suas informações de contato pelo tempo necessário para responder à sua mensagem e estabelecer comunicação profissional. Você pode solicitar a exclusão de seus dados a qualquer momento, e faremos isso dentro de um prazo razoável.
+                        </p>
+
+                        <h2 class="h3 mb-4 mt-5">
+                            <span class="text-gradient">8. Seus Direitos</span>
+                        </h2>
+                        <p>
+                            Você tem o direito de:
+                        </p>
+                        <ul>
+                            <li>Acessar as informações pessoais que temos sobre você.</li>
+                            <li>Solicitar a correção de dados imprecisos.</li>
+                            <li>Solicitar a exclusão de seus dados.</li>
+                            <li>Retirar o consentimento para o uso de seus dados.</li>
+                        </ul>
+
+                        <h2 class="h3 mb-4 mt-5">
+                            <span class="text-gradient">9. Cookies</span>
+                        </h2>
+                        <p>
+                            Este portfólio não utiliza cookies de rastreamento. Qualquer cookie utilizado é apenas para funcionalidades essenciais do site, como manutenção de sessão.
+                        </p>
+
+                        <h2 class="h3 mb-4 mt-5">
+                            <span class="text-gradient">10. Links Externos</span>
+                        </h2>
+                        <p>
+                            Este portfólio contém links para redes sociais (GitHub e LinkedIn). Estas plataformas têm suas próprias políticas de privacidade. Recomendamos que você revise as políticas de privacidade desses sites antes de compartilhar informações pessoais.
+                        </p>
+
+                        <h2 class="h3 mb-4 mt-5">
+                            <span class="text-gradient">11. Alterações nesta Política</span>
+                        </h2>
+                        <p>
+                            Reservamos o direito de atualizar esta Política de Privacidade a qualquer momento. Qualquer alteração será publicada nesta página, e a data de última atualização será modificada. Recomendamos que você revise esta política periodicamente.
+                        </p>
+
+                        <h2 class="h3 mb-4 mt-5">
+                            <span class="text-gradient">12. Contato</span>
+                        </h2>
+                        <p>
+                            Se você tiver dúvidas sobre esta Política de Privacidade ou sobre como tratamos seus dados, entre em contato conosco através do formulário de contato no portfólio ou visite:
+                        </p>
+                        <ul>
+                            <li><a href="https://github.com/alesinhamotta" target="_blank">GitHub: @alesinhamotta</a></li>
+                            <li><a href="https://www.linkedin.com/in/alessandra-motta-3390b0341/" target="_blank">LinkedIn: Alessandra Motta</a></li>
+                        </ul>
+
+                        <div class="alert alert-info mt-5" role="alert">
+                            <i class="fas fa-info-circle me-2"></i>
+                            <strong>Última atualização:</strong> 25 de Novembro de 2025
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container text-center">
+            <p class="mb-2">&copy; 2025 Alessandra Motta. Todos os direitos reservados.</p>
+            <p class="text-muted">Feito com <i class="fas fa-heart text-danger"></i> e muito código</p>
+        </div>
+    </footer>
+
+   
+        <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+      <!-- JS customizado -->
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</body>
+</html>

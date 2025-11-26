@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block title %}Contato{% endblock %}
+
+{% block content %}
+
+<section class="contact-section py-5" style="padding-top: 210px !important; padding-bottom: 120px; min-height: 100vh; display: flex; align-items: center; justify-content: center;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="text-center mb-5">
+                    <h1 class="display-4 fw-bold mb-4">
+                        Vamos <span class="text-gradient">Conversar</span>?
+                    </h1>
+                    <p class="lead text-muted">
+                        Adoraria ouvir sobre seu projeto ou oportunidade!
+                    </p>
+                </div>
+
+                <!-- Mensagens de feedback -->
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                  {% if messages %}
+                    {% for category, message in messages %}
+                      <div class="alert alert-{{ category }} text-center alert-dismissible fade show">
+                        {{ message }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                      </div>
+                    {% endfor %}
+                  {% endif %}
+                {% endwith %}
+
+                <div class="contact-card p-5 shadow-lg">
+                    <form method="POST" action="{{ url_for('contato') }}">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <input type="text" name="name" class="form-control form-control-lg" placeholder="Seu nome" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" name="email" class="form-control form-control-lg" placeholder="Seu e-mail" required>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" name="subject" class="form-control form-control-lg" placeholder="Assunto" required>
+                            </div>
+                            <div class="col-12">
+                                <textarea name="message" class="form-control form-control-lg" rows="6" placeholder="Sua mensagem..." required></textarea>
+                            </div>
+                            <div class="col-12 text-center mt-4">
+                                <button type="submit" class="btn btn-primary btn-lg px-5">
+                                    Enviar Mensagem
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

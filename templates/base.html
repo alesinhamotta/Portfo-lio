@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alessandra Motta - {% block title %}Portfólio{% endblock %}</title>
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/portfolio.png') }}" type="image/png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="{{ url_for('index') }}">
+                <span class="brand-text">Alessandra Motta</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="#navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('index') }}">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('sobre') }}">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('contato') }}">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    {% block content %}{% endblock %}
+
+    <!-- Footer com amor -->
+    <footer class="footer py-4 mt-auto">
+        <div class="container text-center">
+            <p class="mb-2">© 2025 Alessandra Motta. Todos os direitos reservados.</p>
+            <p class="text-muted">Feito com <i class="fas fa-heart text-danger"></i> e muito código</p>
+            <div class="social-links mt-3"></div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+    
+    <!-- Ícones no footer também -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll('.social-links').forEach(container => {
+                container.innerHTML = `
+                    <a href="https://github.com/alesinhamotta" target="_blank" class="social-icon mx-2">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/alessandra-motta-3390b0341/" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                `;
+            });
+        });
+    </script>
+</body>
+</html>
