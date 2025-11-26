@@ -1,27 +1,45 @@
-# Portfólio de Alessandra Motta - Desenvolvedora AI & Machine Learning
+# Portfólio - Alessandra Motta 💜
 
-## Descrição
+Site portfólio completo, responsivo e funcional com:
+- Design moderno (dark mode + gradientes)
+- Animações suaves
+- Formulário de contato 100% funcional (online e local)
+- Backend com Flask + SQLite (local)
+- Deploy estático no GitHub Pages
 
-Este portfólio web foi desenvolvido para apresentar meus projetos e habilidades como desenvolvedora focada em Inteligência Artificial e Machine Learning. Aqui você encontrará uma visão geral da minha jornada, projetos em destaque e formas de contato.
-
-## Tecnologias Utilizadas
-
-- HTML5
-- CSS3
-- JavaScript
-- Bootstrap 5.3.2
-- Font Awesome 6.4.2
-- Google Fonts (Poppins)
+Link ao vivo: https://alesinhamotta.github.io/Portfo-lio/
 
 ## Funcionalidades
 
-- Design responsivo para diversas telas.
-- Navegação intuitiva entre as seções: Início, Sobre e Contato.
-- Seção de "Projetos em Destaque" com detalhes sobre o "App de Visual Law com IA".
-- Seção "Minhas Habilidades" com visualização de competências.
-- Formulário de contato interativo.
-- Links diretos para GitHub e LinkedIn.
-- Animações e efeitos visuais para uma experiência dinâmica.
+- Formulário de contato funcionando em qualquer lugar (GitHub Pages inclusa)
+- Banco de dados local (SQLite) pra desenvolvimento
+- Envio de e-mail automático
+- Totalmente customizável
 
-## Estrutura do Projeto
+## Como usar este projeto como base pro seu portfólio
 
+### Opção 1: Só o visual (GitHub Pages - mais fácil)
+1. Faça fork deste repositório
+2. Ative o GitHub Pages em Settings → Pages → branch main
+3. Troque as fotos, textos e cores nos arquivos HTML/CSS
+4. Pronto! Seu portfólio tá no ar
+
+### Opção 2: Com backend completo (rodar localmente ou em servidor)
+```bash
+# 1. Clone o projeto
+git clone https://github.com/alesinhamotta/Portfo-lio.git
+cd Portfo-lio
+
+# 2. Crie e ative o ambiente virtual
+python -m venv venv
+venv\Scripts\activate  # Windows
+# source venv/bin/activate  # Mac/Linux
+
+# 3. Instale as dependências
+pip install flask flask-sqlalchemy flask-mail python-dotenv
+
+# 4. Configure o e-mail (arquivo .env na raiz)
+echo MAIL_PASSWORD=suasenadeappaqui > .env
+
+# 5. Rode o projeto
+python app.py
